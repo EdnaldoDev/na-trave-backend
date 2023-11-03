@@ -2,9 +2,6 @@
   "name": "na-trave-backend",
   "type": "module",
   "version": "1.0.0",
-  "engines": {
-    "node": "18.2"
-  },
   "description": "a simple backend to a bet site",
   "main": "index.js",
   "scripts": {
