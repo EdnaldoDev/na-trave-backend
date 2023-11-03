@@ -3,14 +3,14 @@
   "type": "module",
   "version": "1.0.0",
   "engines": {
-    "node": "18"
+    "node": "18.2"
   },
   "description": "a simple backend to a bet site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon api/index.js",
-    "start": "api/index.js"
+    "start": "node api/index.js"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
