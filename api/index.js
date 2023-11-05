@@ -10,7 +10,7 @@ import { PrismaClient } from '@prisma/client';
 
 export const prisma= new PrismaClient()
 
-const PORT= process.env.PORT || 3000
+const PORT= process.env.PORT || 9865
 
 app.use(Express.json())
 
