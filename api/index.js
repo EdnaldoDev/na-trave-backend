@@ -49,4 +49,4 @@ app.post('/login', user.login)
 
 app.get('/mybets', authenticateToken, hunche.listBets)
 
-app.listen(PORT, ()=>console.log('Server rruning on port' + PORT))
+app.listen(PORT)
