@@ -16,7 +16,7 @@ app.use(Express.json())
 
 app.use((req, res, next)=>{
     res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Access-Control-Allow-Origin', 'https://na-trave.vercel.app/')
+    res.setHeader('Access-Control-Allow-Origin', 'https://na-trave.vercel.app')
     res.setHeader('Access-Control-Allow-Headers', '*')
 
     next()
