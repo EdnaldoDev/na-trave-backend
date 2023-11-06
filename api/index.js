@@ -19,7 +19,7 @@ app.use(cors({origin: 'https://na-trave.vercel.app'}))
 app.use((req, res, next)=>{
     res.setHeader('Content-Type', 'application/json')
     next()
-}
+})
 
 
 function authenticateToken(req, res, next) {
