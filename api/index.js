@@ -40,12 +40,12 @@ function authenticateToken(req, res, next) {
   }
 
 
-app.get('games', list)
+app.get('/games', list)
 app.post('bet',authenticateToken, hunche.bet)
 
-app.post('signup', user.signUp)
-app.post('login', user.login)
+app.post('/signup', user.signUp)
+app.post('/login', user.login)
 
-app.get('mybets', authenticateToken, hunche.listBets)
+app.get('/mybets', authenticateToken, hunche.listBets)
 
 app.listen(PORT, ()=>console.log('Server rruning on port' + PORT))
