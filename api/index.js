@@ -1,5 +1,5 @@
 import Express from 'express'
-
+import cors from 'cors'
 import { list } from "./games/index.js";
 import { app } from "./setup.js";
 import * as user from "./User/index.js"
@@ -14,11 +14,10 @@ const PORT= process.env.PORT || 9865
 
 app.use(Express.json())
 
+app.use(cors({origin: 'https://na-trave.vercel.app'}))
+
 app.use((req, res, next)=>{
     res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Access-Control-Allow-Origin', process.env.URL)
-    res.setHeader('Access-Control-Allow-Headers', '*')
-
     next()
 })
 
